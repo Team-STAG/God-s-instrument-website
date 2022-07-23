@@ -1,5 +1,5 @@
 "# instrumental_website Instructions" 
-This is a website created fora musical team. it must be concise and simple. No dashboard required
+This is a website created for a musical team. it must be concise and simple. No dashboard required
 
 Note the following:
 
@@ -14,7 +14,8 @@ Note the following:
 9.) the only stylesheet expected to appear in all pages is the general.css file. other styles will be added respectively to the page they bear. e.g the index page will contain both general.css and index.css style, the about page will contain index.css and about.css style
 10.) the images for the website will be found in the junk folder
 11.) the footer section will have our addvertisement as the tech agency that created the website
-11.) Ask any questions directly if you got one... ask the in the group or directly to my dm
+12.) Roles will be distributed once the ui for the website has been determined.
+13.) Ask any questions directly if you got one... ask the in the group or directly to my dm
 
 
 PAGES REQUIRED FOR THE WEBSITE ARE
@@ -24,3 +25,5 @@ SN => PAGES => FILENAME => Page title
 1.) Homepage => index.html => God's Instrument
 2.) Aboutpage => about.html => About God's Instrument
 3.) Contactpage => contact.html => Contact God's Instrument
+
+
