@@ -1,0 +1,140 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.hero {
+	width:  100%;
+	height: 10%;
+	min-height: 10vh;
+	background-size: cover;
+	background-position: center;
+	background-color: rgb(0, 0, 0);
+	clear: both;
+	margin-bottom: 2%;
+}
+
+.logo {
+	width: 15%;
+	float: left;
+	width: 10%;
+	margin: 2%;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 3%;
+	padding-right: 3%;
+	padding-left: 3%;
+	float: right;
+}
+
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 3px 15px;
+}
+
+nav ul li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 70%;
+	clear: both;
+}
+
+nav ul li a:hover {
+	color: rgb(255, 152, 0);
+	transition: .5s;
+}
+
+nav ul li a:focus {
+	border-bottom:3px solid rgb(255, 0, 0);
+}
+
+.mail {
+	width: 15%;
+	max-width: 20%;
+	position: relative;
+}
+
+.mail {
+	display: inline-block;
+	padding: 10px 25px;
+	border: 2px solid rgb(255, 152, 0);
+	border-radius: 30px;
+	outline: none;
+	margin: 3% 3% 6% 3%;
+}
+
+.first {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	background-image: url("gi2.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-top: -5%;
+}
+
+.intro {
+	background-color: rgba(231, 176, 10, 0.5);
+	color: rgb(255, 255, 255);
+	background-position: center;
+	width: 60%;
+	margin: auto;
+}
+
+/*#send {
+	padding: 1% 3%;
+}*/
+
+
+.btn-1 {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 152, 0);
+	padding: 5px 15px;
+	border-radius: 30px;
+	margin-top: 3%;
+	margin-left: -2%;
+	border: 1px solid rgb(255, 152, 0);
+}
+
+
+.first img {
+	height: auto;
+	width: 35%;
+	float: right;
+	margin: 10%;
+}
+
+
+.sec {
+	display: inline-block;
+	width: 30%;
+}
+
+.intro h2 {
+	font-size: 190%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	margin-left: 7%;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+.intro p {
+	font-size: 1em;
+	letter-spacing: 3px;
+	text-transform: capitalize;
+	margin-bottom: 3%;
+	margin-top: 5%;
+	margin-left: 7%;
+	font-weight: bold;
+}
