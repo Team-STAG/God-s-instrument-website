@@ -5,6 +5,12 @@
 	box-sizing: border-box;
 }
 
+
+/*@@@@@@@@ HEADER SECTION @@@@@@@@*/
+
+
+
+
 .hero {
 	width:  100%;
 	height: 10%;
@@ -17,10 +23,11 @@
 }
 
 .logo {
-	width: 15%;
 	float: left;
 	width: 10%;
 	margin: 2%;
+	border: 2px solid rgb(231, 176, 10);
+	border-radius: 100px;
 }
 
 nav {
@@ -45,17 +52,17 @@ nav ul li a {
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
-	font-size: 70%;
+	font-size: 1em;
 	clear: both;
 }
 
 nav ul li a:hover {
-	color: rgb(255, 152, 0);
+	color: rgb(231, 176, 10);
 	transition: .5s;
 }
 
 nav ul li a:focus {
-	border-bottom:3px solid rgb(255, 0, 0);
+	border-bottom:3px solid rgb(255, 152, 0);
 }
 
 .mail {
@@ -67,11 +74,30 @@ nav ul li a:focus {
 .mail {
 	display: inline-block;
 	padding: 10px 25px;
-	border: 2px solid rgb(255, 152, 0);
+	border: 2px solid rgb(231, 176, 10);
 	border-radius: 30px;
 	outline: none;
 	margin: 3% 3% 6% 3%;
 }
+
+.btn-1 {
+	color: rgb(0, 0, 0);
+	background-color: rgb(231, 176, 10);
+	padding: 5px 15px;
+	border-radius: 30px;
+	margin-top: 3%;
+	margin-left: -2%;
+	border: 1px solid rgb(255, 152, 0);
+}
+
+
+
+
+/*@@@@@@@@@ CONTENT SECTION @@@@@@@@*/
+
+
+
+
 
 .first {
 	width: 100%;
@@ -96,22 +122,16 @@ nav ul li a:focus {
 }*/
 
 
-.btn-1 {
-	color: rgb(0, 0, 0);
-	background-color: rgb(255, 152, 0);
-	padding: 5px 15px;
-	border-radius: 30px;
-	margin-top: 3%;
-	margin-left: -2%;
-	border: 1px solid rgb(255, 152, 0);
-}
 
 
-.first img {
+
+.first .intro img {
 	height: auto;
 	width: 35%;
 	float: right;
 	margin: 10%;
+	border: 1px solid transparent;
+	border-radius: 100%;
 }
 
 
@@ -121,12 +141,14 @@ nav ul li a:focus {
 }
 
 .intro h2 {
-	font-size: 190%;
+	font-size: 2em;
 	margin-top: 5%;
 	margin-bottom: 10%;
 	margin-left: 7%;
 	text-transform: capitalize;
 	letter-spacing: 2px;
+	text-shadow: 2px 2px rgba(0, 0, 0);
+	border-bottom: 2px solid rgba(255, 152, 0, 0.8);
 }
 
 .intro p {
@@ -138,3 +160,210 @@ nav ul li a:focus {
 	margin-left: 7%;
 	font-weight: bold;
 }
+
+.tree {
+	background-color: rgba(0, 0, 0, 0.7);
+	margin-top: 5%;
+	width: 100%;
+	height: 42vh;
+}
+
+.tree h3 {
+	color: rgb(231, 176, 10);
+	margin-left: 2%;
+	margin-bottom: 1%;
+	text-transform: capitalize;
+	font-size: 1.2em;
+}
+
+.tree img {
+	width: 13%;
+	height: 70%;
+	float: left;
+	padding: 0;
+	margin: 1% 2%;
+}
+
+.tree p a {
+	clear: both;
+	text-decoration: none;
+	text-align: right;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-left: 1%;
+	font-size: 1em;
+}
+
+.tree p a:hover {
+	color: rgb(231, 176, 10);
+}
+
+.four {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 30vh;
+	margin-top: 5%;
+}
+
+.four h3 {
+	color: rgb(231, 176, 10);
+	margin-left: 2%;
+	margin-bottom: 1%;
+	text-transform: capitalize;
+	font-size: 1.2em;
+}
+
+.four .tbl-1 {
+	margin-left: 2%;
+	margin-bottom: 1%;
+}
+
+.tbl-1 tr th {
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.tbl-1 tr td {
+	text-transform: capitalize;
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+	text-align: center;
+	letter-spacing: 1%;
+	padding: 1%;
+}
+
+.tbl-1 tr td a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	margin-bottom: 2%;
+	font-weight: bold;
+}
+
+.tbl-1 tr td a:hover {
+	color: rgb(231, 176, 10);
+	font-weight: bold;
+}
+
+
+
+
+
+/*@@@@@@@@@ FOOTER SECTION @@@@@@@@@@@*/
+
+
+
+.foot {
+	background-color: rgb(0, 0, 0);
+}
+
+.foot h2 {
+	margin-left: 2%;
+	color: rgb(231, 176, 10);
+	text-transform: capitalize;
+	border-bottom: 2px solid rgb(255, 152, 0);
+	display: inline-block;
+	font-size: 2em;
+}
+	
+.foot p {
+	color: rgb(255, 255, 255);
+	margin-left: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	font-size: 0.7em;
+}
+
+.newsletter .clue {
+	width: 25%;
+	max-width: 35%;
+}
+
+.newsletter .clue {
+	display: inline-block;
+	padding: 1%;
+	border: 2px solid rgb(231, 176, 10);
+	outline: none;
+	margin: 0% 1% 1% 3%;
+	/*border-radius: 30px;*/
+}
+
+.newsletter .btn-2 {
+	color: rgb(0, 0, 0);
+	background-color: rgb(231, 176, 10);
+	padding: 8px 18px;
+	/*border-radius: 30px;*/
+	margin-top: 3%;
+	margin-left: -1%;
+	border: 1px solid rgb(255, 152, 0);
+}
+
+.newsletter .btn-2:hover {
+	background-color: transparent;
+	border: 2px solid rgb(231, 176, 10);
+	cursor: pointer;
+}
+
+.cool h3 {
+	display: inline-block;
+	color: rgb(231, 176, 10);
+	font-size: 1.2em;
+	text-transform: capitalize;
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-bottom: 1%;
+	letter-spacing: 1px;
+	border-bottom: 2px solid rgb(231, 176, 10);
+}
+
+.cool p a {
+	color: rgb(255, 255, 255);
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+
+.cool p a;hover {
+	color: rgb(231, 176, 10);
+}
+
+.end p {
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	font-size: 1em;
+	text-align: center;
+}
+
+.end p a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 0.8em;
+	text-transform: capitalize;
+	text-align: center;
+	font-weight: bold;
+}
+
+.end p a:hover {
+	color: rgb(231, 176, 10);
+}
+
+.end span {
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: rgb(231, 176, 10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
