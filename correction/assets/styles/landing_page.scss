@@ -50,7 +50,7 @@ $tetiary-color-opacity: rgba(231,176,10, .2);
             a{
                 display: inline-block;
                 background: $tetiary-color;
-                color: $primary-color-opposite;
+                color: $primary-color;
                 padding: 8px 15px;
                 border-radius: 3px;
             }
@@ -87,5 +87,54 @@ $tetiary-color-opacity: rgba(231,176,10, .2);
 }
 
 .events-container{
-    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: $padding-two;
+    background: $primary-color;
+    color: white;
+
+    .events{
+        width: 22%;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, .1);
+        // background: $primary-color-opposite;
+        // color: black;
+        border-radius: 5px;
+        padding: $padding-top-one;
+        background: rgba(255, 255, 255, .2);
+        margin-right: 3%;
+        margin-bottom: $padding-top-two;
+
+        .event-image{
+            width: 100%;
+            height: 200px;
+            background-color: rgba(255, 255, 255, .3);
+        }
+
+        .event-short-description{
+            text-align: justify;
+            font-size: 0.9rem;
+
+            p{
+                margin-top: $padding-top-one;
+            }
+
+            .date{
+                font-size: 0.7rem;
+                font-style: italic;
+            }
+
+        }
+
+        .event-action{
+            margin-top: $padding-top-one;
+            button{
+                width: 100%;
+                background: $tetiary-color;
+                border: none;
+                border-radius: 3px;
+                
+            }
+        }
+    }
 }
