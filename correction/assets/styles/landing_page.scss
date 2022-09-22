@@ -1,3 +1,63 @@
+$padding: 0px 3vw;
+$padding-top-one: 10px;
+$padding-top-two: 20px;
+$padding-top-three: 30px;
+$padding-top-four: 40px;
+$padding-top-five: 50px;
+$padding-top-six: 60px;
+$primary-color: black;
+$primary-color-opposite: white;
+$tetiary-color: #e7b00a;
+$tetiary-color-opacity: rgba(231,176,10, .2);
+
 .banner-container{
-    
+    width: 100%;
+    height: 100vh;
+    background: url("../images/banner_image.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: white;
+    text-align: center;
+    padding: $padding;
+
+    .banner-content{
+        width: 80%;
+        height: auto;
+        padding: $padding-top-two;
+        border-radius: 5px;
+        backdrop-filter: blur(10px);
+        background: $tetiary-color-opacity;
+
+        .banner-header{
+            font-weight: bold;
+            font-size: 2rem;
+
+        }
+
+        .subtitle{
+            color: rgba(0, 0, 0, .9);
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        .call-to-action{
+            margin-top: $padding-top-two;
+
+            a{
+                display: inline-block;
+                background: $tetiary-color;
+                color: $primary-color-opposite;
+                padding: 8px 15px;
+                border-radius: 3px;
+            }
+        }
+
+    }
+
+    .about-container{
+        padding: $padding;
+        
+    }
 }
