@@ -25,6 +25,9 @@ body button {
   border-radius: 3px;
   padding: 6px 10px;
 }
+body img {
+  width: 100%;
+}
 body header {
   position: fixed;
   top: 0px;

@@ -1,4 +1,6 @@
 $padding: 0px 3vw;
+$padding-one: 30px 3vw;
+$padding-two: 50px 3vw;
 $padding-top-one: 10px;
 $padding-top-two: 20px;
 $padding-top-three: 30px;
@@ -20,7 +22,7 @@ $tetiary-color-opacity: rgba(231,176,10, .2);
     align-items: center;
     // color: white;
     text-align: center;
-    padding: $padding;
+    padding: $padding-one;
 
     .banner-content{
         width: 80%;
@@ -56,8 +58,15 @@ $tetiary-color-opacity: rgba(231,176,10, .2);
 
     }
 
-    .about-container{
-        padding: $padding;
-        
+}
+
+.about-container{
+    padding: $padding-two;
+    display: flex;
+    
+
+    .about-text,
+    .about-image{
+        width: 40%;
     }
 }
