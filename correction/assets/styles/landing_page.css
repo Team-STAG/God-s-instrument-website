@@ -41,8 +41,16 @@
 .about-container {
   padding: 50px 3vw;
   display: flex;
+  justify-content: space-between;
 }
 .about-container .about-text,
 .about-container .about-image {
-  width: 40%;
+  width: 45%;
+}
+.about-container .about-text h2 {
+  margin-bottom: 10px;
+}
+.about-container .about-image {
+  border-radius: 5px;
+  overflow: hidden;
 }/*# sourceMappingURL=landing_page.css.map */

@@ -63,10 +63,29 @@ $tetiary-color-opacity: rgba(231,176,10, .2);
 .about-container{
     padding: $padding-two;
     display: flex;
+    justify-content: space-between;
+    // align-items: center;
     
 
     .about-text,
     .about-image{
-        width: 40%;
+        width: 45%;
     }
+
+    .about-text{
+
+        h2{
+            margin-bottom: $padding-top-one;
+
+        }
+    }
+
+    .about-image{
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+
+.events-container{
+    
 }
