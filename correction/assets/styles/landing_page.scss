@@ -125,6 +125,9 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
             height: 200px;
             background-color: rgba(255, 255, 255, .3);
             overflow: hidden;
+            display: flex;
+            align-items: center;
+
 
             img{
                 width: 100%;
@@ -481,6 +484,20 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
                     background: $tetiary-color;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .events-container{
+
+        .event-contents{
+            justify-content: space-between;
+        }
+
+        .events{
+
+            width: 40%;
         }
     }
 }

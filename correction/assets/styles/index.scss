@@ -15,6 +15,7 @@ html{
 }
 
 $padding: 0px 3vw;
+
 $padding-top-one: 10px;
 $padding-top-two: 20px;
 $padding-top-three: 30px;
@@ -24,12 +25,15 @@ $padding-top-six: 60px;
 $primary-color: black;
 $primary-color-opposite: white;
 $tetiary-color: #e7b00a;
+$header-height: 70px;
 $tetiary-color-opacity: rgba(231,176,10, .2);
+
 
 body{
     font-family: poppins;
     scrollbar-width: thin;
     scrollbar-track-color: rgba(231,176,10, .8);
+    width: 100vw;
 
     a{
         text-decoration: none;
@@ -106,11 +110,12 @@ body{
         padding: $padding;
         background: $primary-color;
         width: 100%;
-        height: 70px;
+        height: $header-height;
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 999;
+        color: white;
 
         .logo{
             width: auto;
@@ -119,6 +124,7 @@ body{
             .image{
                 box-shadow: 0px 0px 3px 0px $tetiary-color;
                 border-radius: 50%;
+                min-width: 80px;
             }
 
             img{
@@ -126,7 +132,8 @@ body{
             }
         }
 
-        .link{
+        .desktop-link{
+            // border: 1px solid red;
 
             ul{
                 list-style: none;
@@ -173,11 +180,54 @@ body{
 
             }
         }
+
+        .mobile-link-button{
+            font-size: 1.5rem;
+            cursor: pointer;
+            // border: 1px solid red;
+            display: none;
+        }
     
     }
 
     main{
         min-height: 100vh;
+        position: relative;
+
+        .mobile-links{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            max-width: 350px;
+            top: $header-height;
+            background: $tetiary-color;
+            z-index: 99;
+            right: -500px;
+            transition: 1s ease all;
+            display: flex;
+
+            ul{
+                width: 100%;
+                list-style: none;
+                margin-top: 30px;
+
+                li{
+
+                    a{
+                        display: block;
+                        padding: 20px;
+                        padding-left: 40%;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+
+                    #active-link{
+                        background: rgba(0, 0, 0, .2)
+                    }
+                }
+            }
+        }
     }
 
     footer{
@@ -295,6 +345,26 @@ body{
 
     }
 
+    @media only screen and (max-width: 500px){
+
+        header{
+            .desktop-link{
+                display: none;
+            }
+
+            .mobile-link-button{
+                display: block;
+            }
+        }
+
+        main{
+
+            .mobile-links{
+                max-width: 500px;
+            }
+        }
+    
+    }
 
 
 }
@@ -312,3 +382,5 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
     background: rgba(255, 255, 255, .3);
 }
+
+

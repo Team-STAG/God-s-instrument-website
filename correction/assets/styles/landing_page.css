@@ -87,6 +87,8 @@
   height: 200px;
   background-color: rgba(255, 255, 255, 0.3);
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .events-container .events .event-image img {
   width: 100%;
@@ -359,4 +361,13 @@
 }
 .contact-form-container .contact-form form .form-content button {
   background: #e7b00a;
+}
+
+@media only screen and (max-width: 980px) {
+  .events-container .event-contents {
+    justify-content: space-between;
+  }
+  .events-container .events {
+    width: 40%;
+  }
 }/*# sourceMappingURL=landing_page.css.map */
