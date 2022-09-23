@@ -88,11 +88,21 @@ $tetiary-color-opacity: rgba(231,176,10, .2);
 
 .events-container{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     padding: $padding-two;
     background: $primary-color;
     color: white;
+
+    .event-header{
+        font-size: 1.3rem;
+        margin-bottom: $padding-top-two;
+    }
+
+    .event-contents{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
 
     .events{
         width: 22%;
@@ -135,6 +145,116 @@ $tetiary-color-opacity: rgba(231,176,10, .2);
                 border-radius: 3px;
                 
             }
+        }
+    }
+
+    .event-see-all{
+        display: flex;
+        justify-content: flex-end;
+
+        a{
+            color: $tetiary-color;
+            position: relative;
+        }
+
+        a::after{
+            width: 0%;
+            content: "";
+            height: 2px;
+            background: $tetiary-color;
+            left: 0px;
+            bottom: -2px;
+            position: absolute;
+        }
+
+        a:hover::after{
+            width: 100%;
+            transition: 0.5s ease all;
+        }
+    }
+}
+
+.musics-container{
+    padding: $padding-two;
+
+    .music-header{
+        font-size: 1.3rem;
+        margin-bottom: $padding-top-two;
+        font-weight: bold;
+    }
+
+    .music-content{
+        display: flex;
+        flex-wrap: wrap;
+
+        .musics{
+            width: 22%;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+            padding: $padding-top-one;
+            border-radius: 5px;
+            margin-right: 3%;
+            margin-bottom: $padding-top-two;
+
+            .music-image{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5rem;
+                color: rgba(0, 0, 0, .8);
+                background: rgba(0, 0, 0, .03);
+                border-radius: 3px;
+            }
+
+            .music-name{
+                margin-top: $padding-top-two;
+                font-weight: bold;
+            }
+
+            .music-player{
+                width: 100%;
+                margin-top: $padding-top-two;
+
+                audio{
+                    width: 100%;
+                }
+
+                // audio::-webkit-media-controls-panel{
+                //     background: black;
+                // }
+
+
+                // audio::-webkit-media-controls-mute-button,
+                // audio::-webkit-media-controls-play-button{
+                //     color: white;
+                // }
+            }
+        }
+    }
+
+    .music-see-all{
+        display: flex;
+        justify-content: flex-end;
+
+        a{
+            color: $tetiary-color;
+            position: relative;
+        }
+
+        a::after{
+            width: 0%;
+            content: "";
+            height: 2px;
+            background: $tetiary-color;
+            left: 0px;
+            bottom: -2px;
+            position: absolute;
+        }
+
+        a:hover::after{
+            width: 100%;
+            transition: 0.5s ease all;
         }
     }
 }
