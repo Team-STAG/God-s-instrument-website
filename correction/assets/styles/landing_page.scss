@@ -524,6 +524,46 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
 
     .contact-form-container{
         flex-direction: column;
+
+        .contact-header{
+            text-align: center;
+        }
+
+        .contact-details-link,
+        .contact-form{
+            width: 95%;
+        }
+
+        .divider{
+
+            .divider-text{
+                padding: 0px 20px;
+            }
+
+            .divider-text::after,
+            .divider-text::before{
+                width: 500px;
+                height: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+
+
+            }
+
+            .divider-text::before{
+                left: 100%;
+            }
+
+            .divider-text::after{
+                left: -500px;
+                // display: none;
+            }
+
+        }
+
+        .contact-form{
+            margin-top: $padding-top-two;
+        }
     }
 
 }

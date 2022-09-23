@@ -385,6 +385,32 @@
   .contact-form-container {
     flex-direction: column;
   }
+  .contact-form-container .contact-header {
+    text-align: center;
+  }
+  .contact-form-container .contact-details-link,
+.contact-form-container .contact-form {
+    width: 95%;
+  }
+  .contact-form-container .divider .divider-text {
+    padding: 0px 20px;
+  }
+  .contact-form-container .divider .divider-text::after,
+.contact-form-container .divider .divider-text::before {
+    width: 500px;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .contact-form-container .divider .divider-text::before {
+    left: 100%;
+  }
+  .contact-form-container .divider .divider-text::after {
+    left: -500px;
+  }
+  .contact-form-container .contact-form {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 580px) {
   .about-container {
