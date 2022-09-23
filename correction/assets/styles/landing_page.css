@@ -381,6 +381,11 @@
     width: 40%;
   }
 }
+@media only screen and (max-width: 750px) {
+  .contact-form-container {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 580px) {
   .about-container {
     flex-direction: column;
@@ -405,10 +410,16 @@
     width: 90%;
     margin-right: unset;
   }
+  .musics-container .music-header {
+    text-align: center;
+  }
   .musics-container .music-content {
     justify-content: center;
   }
   .musics-container .music-content .musics {
     width: 90%;
+  }
+  .contact-container .contact-header {
+    text-align: center;
   }
 }/*# sourceMappingURL=landing_page.css.map */

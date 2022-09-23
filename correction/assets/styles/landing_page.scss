@@ -520,6 +520,14 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
 
 }
 
+@media only screen and (max-width: 750px){
+
+    .contact-form-container{
+        flex-direction: column;
+    }
+
+}
+
 @media only screen and (max-width: 580px){
 
     .about-container{
@@ -559,6 +567,11 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
 
     .musics-container{
 
+        .music-header{
+
+            text-align: center;
+        }
+
         .music-content{
             justify-content: center;
 
@@ -567,6 +580,13 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
             }
         }
 
+    }
+
+    .contact-container{
+
+        .contact-header{
+            text-align: center;
+        }
     }
 }
 
