@@ -81,6 +81,29 @@ function scrollToElement(hash){
    }
 }
 
+function setActiveLink(sentLink){
+   
+   var links = All(".link a"),
+      hash = "#" + sentLink;
+
+      // console.log(hash)
+
+   links.forEach((link)=>{
+
+      link.removeAttribute("id");
+      // console.log(link.hash);
+
+      if(link.hash === hash){
+
+         link.setAttribute("id", "active-link")
+      }
+
+      
+   });
+   // location.hash = sentLink;
+
+}
+
 window.addEventListener("load", ()=>{
    var mobileLinkButton =  Ele(".mobile-link-button"),
       links = All(".link a");
@@ -137,5 +160,35 @@ window.addEventListener("load", ()=>{
 
 
    });
+
+   window.addEventListener("scroll", ()=>{
+
+      var windowScrolled = window.scrollY,
+         aboutScroll = (Ele("#about").offsetTop - 80),
+         eventScroll = (Ele("#pastevents").offsetTop - 80),
+         contactScroll = (Ele("#contact").offsetTop - 80),
+         musicScroll = (Ele("#musics").offsetTop - 80);
+
+         
+
+         if(windowScrolled >= 0 && windowScrolled  < aboutScroll){
+            // console.log(aboutScroll)
+            setActiveLink("home");
+
+         }else if(windowScrolled >= aboutScroll && windowScrolled  < eventScroll){
+
+            setActiveLink("about");
+         }else if(windowScrolled >= eventScroll && windowScrolled  < musicScroll){
+
+            setActiveLink("pastevents");
+         }else if(windowScrolled >= musicScroll && windowScrolled  < contactScroll){
+
+            setActiveLink("musics");
+         }else if(windowScrolled >= contactScroll){
+
+            setActiveLink("contact");
+            }
+
+   })
 
 })
