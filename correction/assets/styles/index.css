@@ -68,7 +68,7 @@ body header {
   left: 0px;
   padding: 0px 3vw;
   background: black;
-  width: 100%;
+  width: 100vw;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -125,11 +125,12 @@ body header .mobile-link-button {
   cursor: pointer;
   display: none;
 }
-body main {
+body .main {
   min-height: 100vh;
   position: relative;
+  display: block;
 }
-body main .mobile-links {
+body .main .mobile-links {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -141,12 +142,12 @@ body main .mobile-links {
   transition: 1s ease all;
   display: flex;
 }
-body main .mobile-links ul {
+body .main .mobile-links ul {
   width: 100%;
   list-style: none;
   margin-top: 30px;
 }
-body main .mobile-links ul li a {
+body .main .mobile-links ul li a {
   display: block;
   padding: 20px;
   padding-left: 40%;
@@ -154,7 +155,7 @@ body main .mobile-links ul li a {
   font-weight: bold;
   font-size: 1.2rem;
 }
-body main .mobile-links ul li #active-link {
+body .main .mobile-links ul li #active-link {
   background: rgba(0, 0, 0, 0.2);
 }
 body footer {

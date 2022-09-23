@@ -26,6 +26,7 @@ $primary-color: black;
 $primary-color-opposite: white;
 $tetiary-color: #e7b00a;
 $header-height: 70px;
+$default-width: 100vw;
 $tetiary-color-opacity: rgba(231,176,10, .2);
 
 
@@ -33,7 +34,7 @@ body{
     font-family: poppins;
     scrollbar-width: thin;
     scrollbar-track-color: rgba(231,176,10, .8);
-    width: 100vw;
+    width: $default-width;
     position: relative;
 
     a{
@@ -110,7 +111,7 @@ body{
         left: 0px;
         padding: $padding;
         background: $primary-color;
-        width: 100%;
+        width: $default-width;
         height: $header-height;
         display: flex;
         justify-content: space-between;
@@ -191,9 +192,10 @@ body{
     
     }
 
-    main{
+    .main{
         min-height: 100vh;
         position: relative;
+        display: block;
 
         .mobile-links{
             position: fixed;

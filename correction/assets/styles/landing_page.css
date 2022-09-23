@@ -293,6 +293,7 @@
   color: white;
   justify-content: space-between;
   padding-bottom: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .contact-form-container .contact-header {
   font-size: 1.3rem;
@@ -301,6 +302,7 @@
 .contact-form-container .contact-details-link {
   width: 40%;
   height: auto;
+  margin-bottom: 30px;
 }
 .contact-form-container .contact-details-link .contact-description {
   font-size: 0.93rem;
@@ -324,6 +326,7 @@
 }
 .contact-form-container .contact-form {
   width: 40%;
+  margin-bottom: 30px;
 }
 .contact-form-container .contact-form form .form-content {
   display: flex;

@@ -395,6 +395,7 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
     color: white;
     justify-content: space-between;
     padding-bottom: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 
     .contact-header{
         font-size: 1.3rem;
@@ -405,6 +406,7 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
     .contact-details-link{
         width: 40%;
         height: auto;
+        margin-bottom: $padding-top-three;
 
         .contact-description{
             font-size: 0.93rem;
@@ -436,6 +438,7 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
 
     .contact-form{
         width: 40%;
+        margin-bottom: $padding-top-three;
 
         form{
 
