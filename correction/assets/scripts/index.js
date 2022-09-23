@@ -5,6 +5,8 @@ window.addEventListener("load", ()=>{
     function animateContainer(){
         var bannerContent = Ele(".banner-content"),
             aboutContent = Ele(".about-container"),
+            eventContents = Ele(".events-container"),
+            events = All(".events-container .events"),
             headerHeight = 80,
             browserHeight = window.innerHeight;
 
@@ -29,6 +31,27 @@ window.addEventListener("load", ()=>{
             aboutContent.style.marginTop = "20px";
             aboutContent.style.opacity = "0.5";
         }   
+
+        if(eventContents.getBoundingClientRect().top < (browserHeight - 100) && eventContents.getBoundingClientRect().bottom > headerHeight + 200){
+
+            events.forEach((element, index) =>{
+                var timeFrame = (index * 500);
+
+                setTimeout(()=>{
+
+                    element.style.opacity = "1";
+
+                }, timeFrame)
+            })
+
+        }else{
+
+            events.forEach((element) =>{
+                element.style.opacity = "0.1";
+                
+            })
+
+        }
 
         // console.log(aboutContainer.getBoundingClientRect().bottom)
 
