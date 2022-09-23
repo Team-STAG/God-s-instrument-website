@@ -1,0 +1,149 @@
+$padding: 0px 3vw;
+$padding-one: 30px 3vw;
+$padding-two: 50px 3vw;
+$padding-top-one: 10px;
+$padding-top-two: 20px;
+$padding-top-three: 30px;
+$padding-top-four: 40px;
+$padding-top-five: 50px;
+$padding-top-six: 60px;
+$header-height: 110px;
+$primary-color: black;
+$primary-color-opposite: white;
+$tetiary-color: #e7b00a;
+$tetiary-color-opacity: rgba(231,176,10, .2);
+$tetiary-color-opacity-deep: rgba(231,176,10, .4);
+
+.musics-container{
+    padding: $padding-two;
+    padding-top: $header-height;
+
+    .music-header{
+        font-size: 1.3rem;
+        margin-bottom: $padding-top-two;
+        font-weight: bold;
+    }
+
+    .music-content{
+        display: flex;
+        flex-wrap: wrap;
+
+        .musics{
+            width: 22%;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+            padding: $padding-top-one;
+            border-radius: 5px;
+            margin-right: 3%;
+            margin-bottom: $padding-top-two;
+
+            .music-image{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5rem;
+                color: rgba(0, 0, 0, .8);
+                background: rgba(0, 0, 0, .03);
+                border-radius: 3px;
+            }
+
+            .music-name{
+                margin-top: $padding-top-two;
+                font-weight: bold;
+            }
+
+            .music-player{
+                width: 100%;
+                margin-top: $padding-top-two;
+
+                audio{
+                    width: 100%;
+                }
+
+                // audio::-webkit-media-controls-panel{
+                //     background: black;
+                // }
+
+
+                // audio::-webkit-media-controls-mute-button,
+                // audio::-webkit-media-controls-play-button{
+                //     color: white;
+                // }
+            }
+        }
+    }
+
+    .music-see-all{
+        display: flex;
+        justify-content: flex-end;
+
+        a{
+            color: $tetiary-color;
+            position: relative;
+        }
+
+        a::after{
+            width: 0%;
+            content: "";
+            height: 2px;
+            background: $tetiary-color;
+            left: 0px;
+            bottom: -2px;
+            position: absolute;
+        }
+
+        a:hover::after{
+            width: 100%;
+            transition: 0.5s ease all;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 980px){
+    
+
+    .musics-container{
+
+        .music-content{
+            justify-content: space-between;
+
+            .musics{
+                width: 40%;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 580px){
+
+
+    
+
+    .musics-container{
+
+        .music-header{
+
+            text-align: center;
+        }
+
+        .music-content{
+            justify-content: center;
+
+            .musics{
+                width: 90%;
+            }
+        }
+
+    }
+
+    .contact-container{
+
+        .contact-header{
+            text-align: center;
+        }
+    }
+}

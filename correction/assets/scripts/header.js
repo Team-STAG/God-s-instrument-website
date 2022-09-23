@@ -163,31 +163,35 @@ window.addEventListener("load", ()=>{
 
    window.addEventListener("scroll", ()=>{
 
-      var windowScrolled = window.scrollY,
-         aboutScroll = (Ele("#about").offsetTop - 80),
-         eventScroll = (Ele("#pastevents").offsetTop - 80),
-         contactScroll = (Ele("#contact").offsetTop - 80),
-         musicScroll = (Ele("#musics").offsetTop - 80);
+      if(Ele("#about") && Ele("#pastevents") && Ele("#contact") && Ele("#musics")){
 
-         
-
-         if(windowScrolled >= 0 && windowScrolled  < aboutScroll){
-            // console.log(aboutScroll)
-            setActiveLink("home");
-
-         }else if(windowScrolled >= aboutScroll && windowScrolled  < eventScroll){
-
-            setActiveLink("about");
-         }else if(windowScrolled >= eventScroll && windowScrolled  < musicScroll){
-
-            setActiveLink("pastevents");
-         }else if(windowScrolled >= musicScroll && windowScrolled  < contactScroll){
-
-            setActiveLink("musics");
-         }else if(windowScrolled >= contactScroll){
-
-            setActiveLink("contact");
+         var windowScrolled = window.scrollY,
+            aboutScroll = (Ele("#about").offsetTop - 80),
+            eventScroll = (Ele("#pastevents").offsetTop - 80),
+            contactScroll = (Ele("#contact").offsetTop - 80),
+            musicScroll = (Ele("#musics").offsetTop - 80);
+   
+            
+   
+            if(windowScrolled >= 0 && windowScrolled  < aboutScroll){
+               // console.log(aboutScroll)
+               setActiveLink("home");
+   
+            }else if(windowScrolled >= aboutScroll && windowScrolled  < eventScroll){
+   
+               setActiveLink("about");
+            }else if(windowScrolled >= eventScroll && windowScrolled  < musicScroll){
+   
+               setActiveLink("pastevents");
+            }else if(windowScrolled >= musicScroll && windowScrolled  < contactScroll){
+   
+               setActiveLink("musics");
+            }else if(windowScrolled >= contactScroll){
+   
+               setActiveLink("contact");
             }
+      }
+
 
    })
 

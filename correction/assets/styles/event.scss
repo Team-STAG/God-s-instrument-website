@@ -1,0 +1,219 @@
+$padding: 0px 3vw;
+$padding-one: 30px 3vw;
+$padding-two: 50px 3vw;
+$padding-top-one: 10px;
+$padding-top-two: 20px;
+$padding-top-three: 30px;
+$padding-top-four: 40px;
+$padding-top-five: 50px;
+$padding-top-six: 60px;
+$header-height: 110px;
+$primary-color: black;
+$primary-color-opposite: white;
+$tetiary-color: #e7b00a;
+$tetiary-color-opacity: rgba(231,176,10, .2);
+$tetiary-color-opacity-deep: rgba(231,176,10, .4);
+
+.events-container{
+    width: 100%;
+    padding: $padding-two;
+    // background: $primary-color;
+    color: black;
+    padding-top: $header-height;
+
+    .event-header{
+        font-size: 1.3rem;
+        margin-bottom: $padding-top-two;
+    }
+
+    .event-contents{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .events{
+        width: 22%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+        // background: $primary-color-opposite;
+        // color: black;
+        border-radius: 5px;
+        padding: $padding-top-one;
+        background: rgba(0, 0, 0, .03);
+        margin-right: 3%;
+        margin-bottom: $padding-top-two;
+
+        .event-name{
+            font-weight: boldmade ;
+        }
+
+        .event-image{
+            width: 100%;
+            height: 200px;
+            background-color: rgba(255, 255, 255, .3);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+
+            img{
+                width: 100%;
+
+            }
+        }
+
+        .event-short-description{
+            text-align: justify;
+            font-size: 0.9rem;
+
+            p{
+                margin-top: $padding-top-one;
+            }
+
+            .date{
+                font-size: 0.7rem;
+                font-style: italic;
+            }
+
+        }
+
+        .event-action{
+            margin-top: $padding-top-one;
+            button{
+                width: 100%;
+                background: $tetiary-color;
+                border: none;
+                border-radius: 3px;
+                
+            }
+        }
+    }
+
+    .event-see-all{
+        display: flex;
+        justify-content: flex-end;
+
+        a{
+            color: $tetiary-color;
+            position: relative;
+        }
+
+        a::after{
+            width: 0%;
+            content: "";
+            height: 2px;
+            background: $tetiary-color;
+            left: 0px;
+            bottom: -2px;
+            position: absolute;
+        }
+
+        a:hover::after{
+            width: 100%;
+            transition: 0.5s ease all;
+        }
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .events-container{
+
+        .event-contents{
+            justify-content: space-between;
+        }
+
+        .events{
+
+            width: 40%;
+        }
+    }
+
+    .musics-container{
+
+        .music-content{
+            justify-content: space-between;
+
+            .musics{
+                width: 40%;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+
+    .contact-form-container{
+        flex-direction: column;
+
+        .contact-header{
+            text-align: center;
+        }
+
+        .contact-details-link,
+        .contact-form{
+            width: 95%;
+        }
+
+        .divider{
+
+            .divider-text{
+                padding: 0px 20px;
+            }
+
+            .divider-text::after,
+            .divider-text::before{
+                width: 500px;
+                height: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+
+
+            }
+
+            .divider-text::before{
+                left: 100%;
+            }
+
+            .divider-text::after{
+                left: -500px;
+                // display: none;
+            }
+
+        }
+
+        .contact-form{
+            margin-top: $padding-top-two;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 580px){
+
+
+    .events-container{
+
+        .event-header{
+            text-align: center;
+        }
+        .event-contents{
+            justify-content: center;
+        }
+
+        .events{
+
+            width: 90%;
+            margin-right: unset;
+        }
+    }
+
+    .contact-container{
+
+        .contact-header{
+            text-align: center;
+        }
+    }
+}
