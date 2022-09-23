@@ -18,6 +18,7 @@ body {
   scrollbar-width: thin;
   scrollbar-track-color: rgba(231, 176, 10, 0.8);
   width: 100vw;
+  position: relative;
 }
 body a {
   text-decoration: none;

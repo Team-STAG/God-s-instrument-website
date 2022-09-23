@@ -71,6 +71,7 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
     .about-text,
     .about-image{
         width: 45%;
+        margin-bottom: $padding-top-two;
     }
 
     .about-text{
@@ -275,6 +276,7 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
 
 .contact-container{
     padding: $padding-two;
+    // display: none;
 
     .contact-header{
         font-size: 1.3rem;
@@ -499,6 +501,69 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
 
             width: 40%;
         }
+    }
+
+    .musics-container{
+
+        .music-content{
+            justify-content: space-between;
+
+            .musics{
+                width: 40%;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 580px){
+
+    .about-container{
+        flex-direction: column;
+
+        
+
+        .about-text,
+        .about-image{
+            width: 100%;
+        }
+
+        .about-text{
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+    }
+
+    .events-container{
+
+        .event-header{
+            text-align: center;
+        }
+        .event-contents{
+            justify-content: center;
+        }
+
+        .events{
+
+            width: 90%;
+            margin-right: unset;
+        }
+    }
+
+    .musics-container{
+
+        .music-content{
+            justify-content: center;
+
+            .musics{
+                width: 90%;
+            }
+        }
+
     }
 }
 

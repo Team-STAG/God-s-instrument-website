@@ -46,6 +46,7 @@
 .about-container .about-text,
 .about-container .about-image {
   width: 45%;
+  margin-bottom: 20px;
 }
 .about-container .about-text h2 {
   margin-bottom: 10px;
@@ -369,5 +370,42 @@
   }
   .events-container .events {
     width: 40%;
+  }
+  .musics-container .music-content {
+    justify-content: space-between;
+  }
+  .musics-container .music-content .musics {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-container .about-text,
+.about-container .about-image {
+    width: 100%;
+  }
+  .about-container .about-text {
+    text-align: center;
+  }
+  .about-container h2 {
+    text-align: center;
+  }
+  .events-container .event-header {
+    text-align: center;
+  }
+  .events-container .event-contents {
+    justify-content: center;
+  }
+  .events-container .events {
+    width: 90%;
+    margin-right: unset;
+  }
+  .musics-container .music-content {
+    justify-content: center;
+  }
+  .musics-container .music-content .musics {
+    width: 90%;
   }
 }/*# sourceMappingURL=landing_page.css.map */
