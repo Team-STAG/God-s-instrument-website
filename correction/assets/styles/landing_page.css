@@ -17,6 +17,8 @@
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background: rgba(231, 176, 10, 0.2);
+  transition: 1s ease all;
+  transform: scale(0.8);
 }
 .banner-container .banner-content .banner-header {
   font-weight: bold;
@@ -42,6 +44,10 @@
   padding: 50px 3vw;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  transform: scale(0.95);
+  opacity: 0.5;
+  transition: 1s ease all;
 }
 .about-container .about-text,
 .about-container .about-image {
