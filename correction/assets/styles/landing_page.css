@@ -413,6 +413,12 @@
   }
 }
 @media only screen and (max-width: 580px) {
+  .banner-container .banner-header {
+    font-size: 1.5rem;
+  }
+  .banner-container .subtitle {
+    font-size: 1rem;
+  }
   .about-container {
     flex-direction: column;
   }

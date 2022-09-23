@@ -242,6 +242,22 @@ body footer .footer-content .copyrights a {
 body footer .footer-content:not(:first-child) {
   margin-top: 20px;
 }
+@media only screen and (max-width: 750px) {
+  body footer .footer-content .footer-contact-details,
+body footer .footer-content .footer-newsletter {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  body footer .footer-content {
+    flex-direction: column;
+  }
+  body footer .footer-content .footer-contact-details,
+body footer .footer-content .footer-newsletter {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
 @media only screen and (max-width: 500px) {
   body header .desktop-link {
     display: none;
