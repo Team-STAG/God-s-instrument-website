@@ -45,6 +45,59 @@ body{
         width: 100%;
     }
 
+    .divider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+
+        .divider-text{
+            font-weight: bold;
+            position: relative;
+            padding: 5px;
+            // background: red;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            // border: 1px solid red;
+            // z-index: 9;
+
+        }
+
+        .divider-text::after,
+        .divider-text::before{
+            position: absolute;
+            content: "";
+
+        }
+    }
+
+    .vertical-divider{
+        // height: 100%;
+
+        .divider-text::after,
+        .divider-text::before{
+            width: 2px;
+            height: 500px;
+            background: rgba(255, 255, 255, .4);
+            left: 50%;
+            transform: translateX(-50%);
+            // z-index: -1;
+
+
+        }
+
+        .divider-text::before{
+            top: 100%;
+        }
+
+        .divider-text::after{
+            bottom: 100%;
+            // display: none;
+        }
+    }
+
     header{
         position: fixed;
         top: 0px;
@@ -164,9 +217,14 @@ body{
                     padding: 0px 10px;
                 }
 
+                input:focus{
+                    border-width: 2px;
+
+                }
+
                 button{
                     background: $tetiary-color;
-                    color: $primary-color-opposite;
+                    color: $primary-color;
                     border-radius: none;
                     border-top-right-radius: 3px;
                     border-bottom-right-radius: 3px;

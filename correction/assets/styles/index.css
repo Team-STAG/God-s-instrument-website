@@ -28,6 +28,37 @@ body button {
 body img {
   width: 100%;
 }
+body .divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+body .divider .divider-text {
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+}
+body .divider .divider-text::after,
+body .divider .divider-text::before {
+  position: absolute;
+  content: "";
+}
+body .vertical-divider .divider-text::after,
+body .vertical-divider .divider-text::before {
+  width: 2px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.4);
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .vertical-divider .divider-text::before {
+  top: 100%;
+}
+body .vertical-divider .divider-text::after {
+  bottom: 100%;
+}
 body header {
   position: fixed;
   top: 0px;
@@ -121,9 +152,12 @@ body footer .footer-content .form-content input {
   width: 80%;
   padding: 0px 10px;
 }
+body footer .footer-content .form-content input:focus {
+  border-width: 2px;
+}
 body footer .footer-content .form-content button {
   background: #e7b00a;
-  color: white;
+  color: black;
   border-radius: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;

@@ -334,10 +334,20 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
                             font-size: 1.8rem;
                         }
 
-                        a:hover{
-                            // border: 1px solid red;
-                            // transform: scale(1.2);
-                            // transition: 0.5s ease all;
+                        .whatsapp{
+                            color: green;
+                        }
+
+                        .facebook{
+                            color: rgb(4, 4, 120);
+                        }
+
+                        .instagram{
+                            background: linear-gradient(to right top, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            -moz-text-fill-color: transparent;
+                            -ms-text-fill-color: transparent;
                         }
                     }
 
@@ -372,5 +382,106 @@ $tetiary-color-opacity-deep: rgba(231,176,10, .4);
         }
     }
 
+}
+
+.contact-form-container{
+    background: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-bottom: 0px;
+
+    .contact-header{
+        font-size: 1.3rem;
+        margin-bottom: $padding-top-one;
+    }
+
+
+    .contact-details-link{
+        width: 40%;
+        height: auto;
+
+        .contact-description{
+            font-size: 0.93rem;
+            color: rgba(255, 255, 255, .8);
+
+        }
+
+        .details-link{
+            list-style: none;
+
+            li{
+                margin-top: $padding-top-two;
+
+                a{
+                    color: $tetiary-color;
+
+                    .icon{
+                        margin-right: 5px;
+                    }
+                }
+
+                a:hover{
+                    transition: 0.5s ease all;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    .contact-form{
+        width: 40%;
+
+        form{
+
+            .form-content{
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    margin-top: $padding-top-one;
+                    font-size: 0.9rem;
+                }
+
+                input,
+                button,
+                textarea{
+                    width: 100%;
+                    margin-top: $padding-top-two;
+                    border: 1px solid $tetiary-color;
+                    border-radius: 3px;
+                    outline: none;
+
+                }
+
+                input,
+                button{
+                    height: 40px;
+                }
+                
+
+                input,
+                textarea{
+                    font-family: poppins;
+                    padding: 0px 10px;
+                }
+
+                input:focus,
+                textarea:focus{
+                    border-width: 2px;
+                }
+
+                textarea{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    height: 100px;
+                }
+
+                button{
+                    background: $tetiary-color;
+                }
+            }
+        }
+    }
 }
 
